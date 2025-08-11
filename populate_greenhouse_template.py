@@ -7,16 +7,16 @@ def populate_greenhouse_template(greenhouse_id):
     # Standardize greenhouse_id for file paths and sheet names
     gh_lower = greenhouse_id.lower()
     
-    template_path = f"/workspaces/newbie/data/{greenhouse_id} Template - data {gh_lower}.csv"
-    excel_path = "/workspaces/newbie/data/Hydronomics Monitoring NEW 2025.xlsx"
+    template_path = f"/workspaces/prec_hydroponics/data/{greenhouse_id} Template - data {gh_lower}.csv"
+    excel_path = "/workspaces/prec_hydroponics/data/HGI Agrometrics 2025-07-26.xls" # Hydronomics Monitoring NEW 2025.xlsx"
     
     # Handle sheet name for Nursery specifically, otherwise use Hydronomics GHX
     if greenhouse_id == 'Nursery':
-        sheet_name = 'Hydronomics NURSERY'
-        output_filename = f"/workspaces/newbie/data/Hydronomics Data nursery.csv"
+        sheet_name = 'NURSERY'
+        output_filename = f"/workspaces/prec_hydroponics/data/Hydronomics Data nursery.csv"
     else:
-        sheet_name = f'Hydronomics {greenhouse_id}'
-        output_filename = f"/workspaces/newbie/data/Hydronomics Data {gh_lower}.csv"
+        sheet_name = f'{greenhouse_id}'
+        output_filename = f"/workspaces/prec_hydroponics/data/Hydronomics Data {gh_lower}.csv"
 
     print(f"Populating template for {sheet_name}...")
 

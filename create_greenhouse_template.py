@@ -3,8 +3,8 @@ import numpy as np
 import argparse
 
 def create_greenhouse_template(greenhouse_id):
-    gh4_template_path = "/workspaces/newbie/data/GH4 Template - data gh4.csv"
-    output_path = f"/workspaces/newbie/data/{greenhouse_id} Template - data {greenhouse_id.lower()}.csv"
+    gh4_template_path = "/workspaces/prec_hydroponics/data/GH4 Template - data gh4.csv"
+    output_path = f"/workspaces/prec_hydroponics/data/{greenhouse_id} Template - data {greenhouse_id.lower()}.csv"
 
     try:
         # Read the GH4 template

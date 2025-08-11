@@ -86,9 +86,9 @@ def transform_specific_sheet(xls_path, sheet_name, output_filename):
     print(f"Successfully transformed {sheet_name} and saved to {output_filename}")
 
 # --- Main execution block ---
-xls_file_path = "/workspaces/newbie/data/Hydronomics Monitoring GH1-4 and Nursery 2025.xlsx"
+xls_file_path = "/workspaces/prec_hydroponics/data/HGI Agrometrics 2025-07-26.xlsx"
 
 # Process GH2, GH4, and Nursery sheets
-transform_specific_sheet(xls_file_path, 'Hydronomics GH2', '/workspaces/newbie/data/Hydronomics Data gh2.csv')
-transform_specific_sheet(xls_file_path, 'Hydronomics GH4', '/workspaces/newbie/data/Hydronomics Data gh4.csv')
-transform_specific_sheet(xls_file_path, 'Hydronomics NURSERY', '/workspaces/newbie/data/Hydronomics Data nursery.csv')
+transform_specific_sheet(xls_file_path, 'Hydronomics GH2', '/workspaces/prec_hydroponics/data/Hydronomics Data gh2.csv')
+transform_specific_sheet(xls_file_path, 'Hydronomics GH4', '/workspaces/prec_hydroponics/data/Hydronomics Data gh4.csv')
+transform_specific_sheet(xls_file_path, 'Hydronomics NURSERY', '/workspaces/prec_hydroponics/data/Hydronomics Data nursery.csv')

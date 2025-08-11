@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-data_dir = '/workspaces/newbie/data'
+data_dir = '/workspaces/prec_hydroponics/data'
 output_file = os.path.join(data_dir, 'Hydronomics Data Merged.csv')
 
 file_names = [

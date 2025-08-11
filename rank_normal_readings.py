@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-data_dir = '/workspaces/newbie/data'
-merged_file = os.path.join(data_dir, 'Hydronomics Data Merged.csv')
+data_dir = '/workspaces/prec_hydroponics/data'
+merged_file = os.path.join(data_dir, 'Agrometrics Data Merged.csv')
 
 try:
     df = pd.read_csv(merged_file)
